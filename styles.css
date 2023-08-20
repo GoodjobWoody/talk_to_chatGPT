@@ -1,153 +1,182 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 50px auto 0 auto;
-    max-width: 100vw;
-    background-color: #f4f4f4; /* Light gray background for the entire page */
-    overflow-y: auto;
-    position: relative; /* Set position to relative */
+  font-family: Arial, sans-serif;
+  margin: 50px auto 0 auto;
+  max-width: 100vw;
+  background-color: #f4f4f4;
+  overflow-y: auto;
+  position: relative;
 }
 
 .container {
-    display: flex; /* Flex container */
-    justify-content: center; /* Space between the two columns */
-    width: 100%;
-    margin: 20px 0; /* Add some margin to the top and bottom */
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 20px 0;
 }
 
-.resume-template, .highlighted-resume {
-    width: 8.5in;
-    height: 11in;
-    padding: 0.5in;
-    box-sizing: border-box;
-    font-size: 10px;
-    line-height: 1.4;
-    background-color: #ffffff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    overflow-y: auto;
+.resume-template,
+.highlighted-resume {
+  width: 8.5in;
+  height: 11in;
+  padding: 0.5in;
+  box-sizing: border-box;
+  font-size: 10px;
+  line-height: 1.4;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  overflow-y: auto;
 }
 
 .resume-template {
-    border-right: 1px solid #ccc; /* Separator line */
-    margin-right: 20px; /* Some space between the two columns */
+  border-right: 1px solid #ccc;
+  margin-right: 20px;
 }
 
-.resume-template span, .resume-template li {
-    background-color: #e0e0e0; /* Light gray background */
-    padding: 2px 4px;
-    border-radius: 3px;
-    cursor: text; /* Text cursor on hover */
+.resume-template span,
+.resume-template li {
+  background-color: #e0e0e0;
+  padding: 2px 4px;
+  border-radius: 3px;
+  cursor: text;
 }
 
 #personal-info {
-    display: flex; /* Flex container */
-    align-items: center; /* Align items vertically centered */
-    border-bottom: 2px solid #000; /* Full-width underline */
-    padding-bottom: 5px; /* Padding to give space between text and underline */
-    line-height: 1.5;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #000;
+  padding-bottom: 5px;
+  line-height: 1.5;
 }
 
 #personal-info span {
-    margin-right: 10px;
-    font-size: 10px;
+  margin-right: 10px;
+  font-size: 10px;
 }
 
-#name, h2 {
-    color: #007BFF;
-    font-size: 16px;
-    font-weight: bold;
+#name,
+h2 {
+  color: #007bff;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 #name {
-    flex-grow: 1; /* Allow the name to expand */
-    margin-right: 10px; /* Some spacing between name and personal info */
+  flex-grow: 1;
+  margin-right: 10px;
 }
 
-#education p {
-    margin-top: 0;
-    margin-bottom: 10px;
+p {
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
 h2 {
-    border-bottom: 2px solid #000;
-    padding-bottom: 5px;
-    margin-top: 0;
+  border-bottom: 2px solid #000;
+  padding-bottom: 5px;
+  margin-top: 0;
 }
 
 h3 {
-    margin-bottom: 0;
-    color: #444;
-    font-size: 12px;
+  margin-bottom: 0;
+  color: #444;
+  font-size: 12px;
+  position: relative;
+  padding-left: 0px;
+  padding-right: 30px;
 }
 
 ul {
-    list-style-type: disc;
-    margin-left: 10px;
-    padding-left: 0;
+  list-style-type: disc;
+  margin-left: 10px;
+  padding-left: 0;
+  position: relative;
 }
 
 button {
-    position: fixed; /* Position the button fixed */
-    bottom: 20px; /* Position it 20px above the bottom edge of the viewport */
-    right: 20px; /* Align it to the right edge of the viewport */
-    padding: 8px 16px;
-    background-color: #007BFF;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    font-size: 10px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 10px;
 }
 
 a {
-    color: #007BFF;
-    text-decoration: none;
-    font-size: 10px;
+  color: #007bff;
+  text-decoration: none;
+  font-size: 10px;
 }
 
 a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .job {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
-p, li {
-    font-size: 12px;
+p,
+li {
+  font-size: 12px;
 }
 
 .highlight {
-    background-color: #FFFF00; /* Yellow background */
-    border-radius: 3px; /* Rounded corners */
-    font-weight: bold; /* Bold text */
+  background-color: #ffff00;
+  border-radius: 3px;
+  font-weight: bold;
 }
 
 .number-highlight {
-    background-color: #90EE90; /* Gold background for numbers */
-    border-radius: 3px; /* Rounded corners */
-    font-weight: bold; /* Bold text */
+  background-color: #90ee90;
+  border-radius: 3px;
+  font-weight: bold;
 }
 
+.add-job,
 .remove-job {
-    background-color: #FF4C4C; /* Red color */
-    color: #fff;
-    border: none;
-    padding: 2px 6px;
-    cursor: pointer;
-    font-size: 14px;
-    border-radius: 50%; /* Makes the button circular */
-    margin-left: 10px; /* Space between the text and the - button */
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  opacity: 0.05;
+  transition: opacity 0.1s ease-in-out;
 }
 
 .add-job {
-    background-color: #007BFF;
-    color: #fff;
-    border: none;
-    padding: 2px 6px;
-    cursor: pointer;
-    font-size: 14px;
-    border-radius: 50%; /* Makes the button circular */
-    margin-right: 10px; /* Space between the + button and the text */
+  background-color: #a8e6cf;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 50%;
+  left: -30px;
 }
 
+.remove-job {
+  background-color: #ff8a80;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 50%;
+  right: -30px;
+}
 
+li {
+  position: relative;
+  margin-left: 30px;
+  padding-right: 30px;
+}
 
+/* When hovering over a specific button, make only that button visible */
+.add-job:hover,
+.remove-job:hover {
+  opacity: 1;
+}
